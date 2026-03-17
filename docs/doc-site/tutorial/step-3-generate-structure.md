@@ -15,6 +15,27 @@ By the end of this step, you will have:
 
 45-60 minutes
 
+## Generate navigation with the script
+
+If you completed your `profile.yaml` in Step 2, the fastest way to get a starting nav structure is to run the content generation script:
+
+```bash
+# From 02-doc-site-portfolio/
+python scripts/generate_content.py \
+  --page structure \
+  --profile profile.yaml
+```
+
+The script outputs a `nav:` YAML block based on your background plus a short rationale explaining the suggested structure. Copy the `nav:` block into your `mkdocs.yml`.
+
+To test without a profile file:
+
+```bash
+python scripts/generate_content.py --page structure --sample
+```
+
+The manual approach below gives you more control over the structure if you prefer to plan it yourself.
+
 ## Plan your navigation structure
 
 Good navigation shows information architecture skills. Plan a structure that highlights your documentation samples.
@@ -111,6 +132,20 @@ touch docs/contact.md
 Adjust filenames to match your planned documentation samples.
 
 ## Use AI to draft your homepage
+
+### Option A: Use the script
+
+```bash
+# From 02-doc-site-portfolio/
+python scripts/generate_content.py \
+  --page home \
+  --profile profile.yaml \
+  --output my-portfolio/docs/index.md
+```
+
+Review the output and personalize any details that don't sound like you.
+
+### Option B: Manual prompt approach
 
 Create a prompt that generates your homepage content. Save this prompt for transparency in your portfolio.
 
@@ -324,6 +359,18 @@ This documentation sample demonstrates [specific skill or documentation type].
 
 Your about page should be professional and highlight relevant experience.
 
+### Option A: Use the script
+
+```bash
+# From 02-doc-site-portfolio/
+python scripts/generate_content.py \
+  --page about \
+  --profile profile.yaml \
+  --output my-portfolio/docs/about.md
+```
+
+### Option B: Manual prompt approach
+
 ### Prompt for about page
 
 ```markdown
@@ -405,7 +452,7 @@ Check that:
 
 You completed these tasks:
 
-- ✓ Planned site navigation structure
+- ✓ Generated site nav structure (script or manual)
 - ✓ Configured `mkdocs.yml` with navigation
 - ✓ Created directory structure and placeholder files
 - ✓ Generated homepage content with AI

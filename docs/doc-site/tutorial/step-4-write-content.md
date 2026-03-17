@@ -15,6 +15,31 @@ By the end of this step, you will have:
 
 2-3 hours
 
+## Generate project pages with the script
+
+For each project in your `profile.yaml`, the content generation script creates a project showcase page:
+
+```bash
+# From 02-doc-site-portfolio/
+python scripts/generate_content.py \
+  --page project \
+  --project "Developer Portal" \
+  --profile profile.yaml \
+  --output my-portfolio/docs/projects/developer-portal.md
+```
+
+Replace `"Developer Portal"` with a project name from your `profile.yaml`. Repeat for each project you want to showcase.
+
+To see what happens without API calls:
+
+```bash
+python scripts/generate_content.py --page project --project "Developer Portal" --sample
+```
+
+Review the output carefully. Add specific details the script couldn't know — exact metrics, stakeholder names, tools you used, and anything that reflects your actual contribution.
+
+The sections below cover generating documentation samples (API references, tutorials, CLI docs) using manual prompting, since these require detailed technical content that you define.
+
 ## Overview of AI collaboration approach
 
 This step teaches you to collaborate with AI effectively for different documentation types. You will learn:
@@ -786,6 +811,7 @@ This documentation shows your process and builds prompt engineering skills.
 
 You completed these tasks:
 
+- ✓ Generated project pages using the script or manual prompting
 - ✓ Generated 3-5 complete documentation samples
 - ✓ Used specific prompting techniques for each type
 - ✓ Reviewed AI output for accuracy and completeness

@@ -16,6 +16,51 @@ By the end of this step, you will have:
 
 1-2 hours
 
+## Use the improvement script
+
+The `improve_content.py` script automates content refinement. Point it at any Markdown file in your portfolio:
+
+```bash
+# From 02-doc-site-portfolio/
+python scripts/improve_content.py \
+  --file my-portfolio/docs/about.md
+```
+
+This rewrites the file in place. Use `--preview` to see the output before saving:
+
+```bash
+python scripts/improve_content.py \
+  --file my-portfolio/docs/about.md \
+  --preview
+```
+
+Use `--output` to write to a different file so you can compare:
+
+```bash
+python scripts/improve_content.py \
+  --file my-portfolio/docs/about.md \
+  --output my-portfolio/docs/about-revised.md
+```
+
+Focus the improvement on a specific area with `--focus`:
+
+```bash
+# Available: clarity, tone, consistency, all (default)
+python scripts/improve_content.py \
+  --file my-portfolio/docs/projects/developer-portal.md \
+  --focus tone
+```
+
+To test without a real file:
+
+```bash
+python scripts/improve_content.py --sample --preview
+```
+
+Always review the output before accepting it. Revert anything that doesn't sound like you or loses important detail.
+
+The manual techniques below give you more targeted control when the script's output needs further refinement.
+
 ## Overview
 
 This step focuses on using AI as an editing partner rather than a content generator. You will learn to:
@@ -522,6 +567,7 @@ Add a refinement section to each case study:
 
 You completed these tasks:
 
+- ✓ Ran the improvement script on key pages
 - ✓ Improved writing clarity and conciseness
 - ✓ Ensured consistent tone across samples
 - ✓ Enhanced technical accuracy

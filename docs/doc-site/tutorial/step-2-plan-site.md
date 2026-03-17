@@ -221,6 +221,31 @@ Being transparent about AI use demonstrates:
 - Critical thinking skills
 - Editing and revision abilities
 
+## Set up your profile file
+
+The content generation scripts use a profile YAML file to personalize the content they generate. Set it up now so it is ready for Step 3.
+
+Copy the example profile and open it for editing:
+
+```bash
+# From the docs-automation-examples/ root directory
+cp 02-doc-site-portfolio/profile.example.yaml 02-doc-site-portfolio/profile.yaml
+```
+
+Open `profile.yaml` and fill in your details:
+
+- `name`, `title`, `years_experience`
+- `specialties` — documentation types you focus on
+- `tools` — tools you use (MkDocs, Confluence, Git, etc.)
+- `experience` — work history with concrete highlights
+- `approach` — your documentation philosophy in one or two sentences
+- `contact` — email and LinkedIn
+- `projects` — documentation projects you want to showcase
+
+You do not need to complete every field now. Fill in what you know and return to it as you go. The more detail you provide, the more personalized the generated content will be.
+
+`profile.yaml` is listed in `.gitignore` and will not be committed.
+
 ## Create your planning document
 
 Create `docs/planning.md` with this template:

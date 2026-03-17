@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Release Notes Automation Starter project will be documented in this file.
+All notable changes to the Documentation Automation Examples project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -8,50 +8,60 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial project setup with release notes automation
-- Comprehensive MkDocs documentation site
-- Step-by-step tutorial (5 steps)
+
+**Doc site portfolio project (02-doc-site-portfolio)**
+- Implemented `generate_content.py` — generates About, Home, project, and site structure pages from a writer profile using Anthropic or OpenAI
+- Implemented `improve_content.py` — refines existing Markdown content for clarity, tone, or consistency using AI
+- Added `profile.example.yaml` — template writers copy and fill in to drive both content generation scripts
+- Wrote all three prompt templates: `about_page_prompt.txt`, `project_page_prompt.txt`, `site_structure_prompt.txt` (previously placeholders)
+- Both scripts support `--sample` mode for full testing without API calls
+
+**Tests**
+- Added `tests/` directory with pytest test suite (39 tests)
+- `tests/test_release_notes.py` — covers sample data, release notes formatting, and fetch with sample flag
+- `tests/test_generate_content.py` — covers profile loading, profile/project formatting, and output wrapping
+- `tests/conftest.py` — stubs optional dependencies so tests run without installing `anthropic`, `openai`, or `PyGithub`
+
+**Release notes automation project (01-release-notes-automation)**
+- Initial project setup with working release notes generation script
 - GitHub API integration using PyGithub
-- Support for Anthropic Claude and OpenAI GPT
+- Support for Anthropic Claude and OpenAI GPT providers
 - Sample data mode for testing without API calls
 - Prompt engineering examples showing evolution from 65% to 91% accuracy
 - Workflow worksheet for documenting manual processes
-- Configuration examples with YAML and environment variables
+- Configuration management with YAML and environment variable overrides
+- Comprehensive MkDocs documentation site
 - Troubleshooting guide with 40+ common issues
 - Comprehensive FAQ with 50+ questions
-- Contributing guidelines for community participation
-- Code of Conduct for inclusive collaboration
+- Contributing guidelines and Code of Conduct
+
+### Changed
+- Doc site portfolio tutorial steps 1–5 updated to reference the new scripts alongside the existing manual prompting approach
+- Tutorial step 1 corrected: AI setup now uses `config.yaml` (matching the actual scripts) instead of a `.env` file with wrong variable names
+- Tutorial step 2 now includes a profile setup section for `profile.yaml`
 
 ### Documentation
-- Complete tutorial covering setup through iteration
-- Reference documentation for API integration
-- Prompt engineering best practices guide
+- Complete tutorial covering setup through iteration (release notes)
+- Doc site tutorial steps 1–6 covering setup through deployment
+- Reference documentation for API integration, prompt engineering, site structure, theme customization, content types, and AI collaboration
 - Sample outputs demonstrating categorization quality
 - Getting started guide for first-time users
-- Configuration reference with all options
+- Portfolio examples with five profile patterns
 
-## [1.0.0] - YYYY-MM-DD (Template for first release)
+## [1.0.0] - YYYY-MM-DD
 
 ### Added
-- Initial release of Release Notes Automation Starter
-- Working Python script for automated release notes generation
-- GitHub API integration
-- AI-powered commit categorization (Anthropic & OpenAI)
-- Complete documentation site with MkDocs Material
-- 5-step tutorial for beginners
-- Sample data for testing
-- Configuration management system
-- Error handling and validation
-
-### Documentation
-- README with quick start guide
-- Complete tutorial (Steps 1-5)
-- Troubleshooting guide
-- FAQ with common questions
-- API integration reference
-- Prompt engineering guide
-- Contributing guidelines
-- Code of Conduct
+- Release notes automation script with GitHub API integration and AI-powered categorization
+- Doc site portfolio project with AI content generation and improvement scripts
+- Complete prompt templates for all content types
+- Profile-driven content generation (`profile.example.yaml`)
+- Sample data mode in all scripts for zero-API-cost testing
+- pytest test suite (39 tests) with no external dependencies required
+- Complete MkDocs Material documentation site covering both projects
+- 5-step release notes tutorial and 6-step doc site tutorial
+- Troubleshooting guides, FAQs, reference docs, and portfolio examples
+- Configuration management via `config.yaml` with environment variable overrides
+- Contributing guidelines and Code of Conduct
 
 ---
 

@@ -239,26 +239,32 @@ Store the key securely in your password manager.
 
 Store the key securely in your password manager.
 
-### Set up environment variable
+### Set up config.yaml
 
-Create a `.env` file in your project root (never commit this file):
+The content generation scripts read credentials from `config.yaml` at the root of the repository. Copy the example file and fill in your details:
 
-For Anthropic:
 ```bash
-ANTHROPIC_API_KEY=sk-ant-your-key-here
-AI_PROVIDER=anthropic
+# From the docs-automation-examples/ root directory
+cp config.example.yaml config.yaml
 ```
 
-For OpenAI:
-```bash
-OPENAI_API_KEY=sk-your-key-here
-AI_PROVIDER=openai
+Open `config.yaml` and update these fields:
+
+For Anthropic (Claude):
+```yaml
+ai_provider: anthropic
+ai_api_key: sk-ant-your-key-here
+model: claude-3-5-sonnet-20241022
 ```
 
-Add `.env` to `.gitignore`:
-```bash
-echo ".env" >> .gitignore
+For OpenAI (GPT):
+```yaml
+ai_provider: openai
+ai_api_key: sk-your-key-here
+model: gpt-4
 ```
+
+`config.yaml` is already listed in `.gitignore` and will not be committed to version control.
 
 ## Customize theme (optional)
 
