@@ -126,4 +126,7 @@ nav:
     - Troubleshooting: doc-site/troubleshooting.md
     - FAQ: doc-site/faq.md
 
+extra_css:
+  - stylesheets/extra.css
+
 copyright: Built for technical writers exploring AI-assisted documentation automation
