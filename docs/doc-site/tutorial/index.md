@@ -1,3 +1,8 @@
+---
+title: Doc site portfolio tutorial
+description: Build a professional technical writing portfolio site using MkDocs and AI collaboration.
+---
+
 # Doc site portfolio tutorial
 
 Build a professional technical writing portfolio site using MkDocs and AI collaboration.
