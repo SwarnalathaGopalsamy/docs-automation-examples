@@ -1,10 +1,10 @@
-site_name: Documentation Automation Examples
-site_description: AI-assisted documentation projects for technical writers
-site_author: Rebecca Alves
-site_url: https://rebeja.github.io/docs-automation-examples/
+site_name: Swarnalatha Gopalsamy - Senior Technical Writer
+site_description: Technical writing portfolio by Swarnalatha Gopalsamy
+site_author: Swarnalatha Gopalsamy
+site_url: https://swarnalathagopalsamy.github.io/docs-automation-examples/
 
 repo_name: docs-automation-examples
-repo_url: https://github.com/rebeja/docs-automation-examples
+repo_url: https://github.com/SwarnalathaGopalsamy/docs-automation-examples
 edit_uri: edit/main/docs/
 
 theme:
@@ -72,7 +72,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/rebeja/docs-automation-examples
+      link: https://github.com/SwarnalathaGopalsamy/docs-automation-examples
   analytics:
     feedback:
       title: Was this page helpful?

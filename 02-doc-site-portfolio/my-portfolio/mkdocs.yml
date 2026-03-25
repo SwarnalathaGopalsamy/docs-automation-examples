@@ -1,0 +1,80 @@
+site_name: Swarnalatha Gopalsamy - Senior Technical Writer
+site_description: Technical writing portfolio showcasing documentation projects
+site_author: Swarnalatha Gopalsamy
+site_url: https://SwarnalathaGopalsamy.github.io/my-portfolio/
+
+repo_name: my-portfolio
+repo_url: https://github.com/SwarnalathaGopalsamy/docs-automation-examples
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  font:
+    text: Inter
+    code: Fira Code
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - footnotes
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Projects:
+    - Overview: projects/index.md
+  - Writing Samples: samples.md
+  - Contact: contact.md
+
+extra_css:
+  - extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SwarnalathaGopalsamy
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/swarnalathagopalsamy
+
+copyright: Copyright &copy; 2026 Swarnalatha Gopalsamy
