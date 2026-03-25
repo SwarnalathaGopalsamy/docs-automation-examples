@@ -38,6 +38,7 @@ real users can understand and act on. My work spans:
 - **Design Review:** Figma, draw.io
 - **Screen Capture:** Snagit, ScreenToGif
 - **AI-Assisted Writing:** ChatGPT, Grammarly
+- **Docs-as-Code** — GitHub, GitHub Pages, GitHub Codespaces, MkDocs, Markdown
 
 ## Work Experience
 
@@ -55,4 +56,3 @@ Healthcare Documentation & Quality
 - Jira Fundamentals — Atlassian
 - Introduction to UX Writing — Udemy
 - AI Tools & ChatGPT Workshop — Be10x *(Mar 2026)*
-- Docs-as-Code — GitHub, GitHub Pages, GitHub Codespaces, MkDocs, Markdown
