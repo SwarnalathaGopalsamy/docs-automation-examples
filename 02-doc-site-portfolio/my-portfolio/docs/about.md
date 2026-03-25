@@ -55,3 +55,4 @@ Healthcare Documentation & Quality
 - Jira Fundamentals — Atlassian
 - Introduction to UX Writing — Udemy
 - AI Tools & ChatGPT Workshop — Be10x *(Mar 2026)*
+- Docs-as-Code — GitHub, GitHub Pages, GitHub Codespaces, MkDocs, Markdown
